@@ -39,6 +39,7 @@ class Microwave {
 
 const fridge = new Fridge(true, false)
 const microwave = new Microwave(false, false)
+const kitchen = new Kitchen(fridge, microwave)
 
-console.log(fridge.switchpower(), fridge.keepcool())
-console.log(microwave.switchpower(), microwave.quickcook())
+console.log(kitchen.fridge.switchpower(), kitchen.fridge.keepcool())
+console.log(kitchen.microwave.switchpower(), kitchen.microwave.quickcook())
